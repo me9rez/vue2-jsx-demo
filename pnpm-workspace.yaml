@@ -1,0 +1,7 @@
+packages:
+  - bunchee-vue-jsx
+  - rsbuild-vue2
+  - vite-vue2
+
+catalog:
+  vue: ^2.7
