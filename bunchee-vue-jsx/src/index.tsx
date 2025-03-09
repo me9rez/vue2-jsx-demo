@@ -1,5 +1,9 @@
 import { defineComponent, PropType } from "vue";
-import { customH as h } from "./helper";
+import { customH as h, Fragment } from "./helper";
+
+export {
+  h, Fragment
+}
 
 export const layoutProps = {
   /**
@@ -19,8 +23,8 @@ export const Layout = defineComponent({
   render() {
     return (
       <div>
-        <h1>vue2 jsx组件测试</h1>
-        <span>span元素rrr</span>
+        <h1>vue2 jsx/tsx组件测试</h1>
+        <span>span元素</span>
       </div>
     );
   },

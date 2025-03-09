@@ -23,14 +23,11 @@
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@components/*": ["../bunchee-vue-jsx/src/*"]
     }
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "../bunchee-vue-jsx/src/**/*.ts",
-    "../bunchee-vue-jsx/src/**/*.tsx"
   ]
 }

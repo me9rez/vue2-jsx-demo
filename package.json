@@ -1,12 +1,22 @@
 {
   "name": "vue2-jsx-test",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": ""
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "keywords": [
+    "vue",
+    "jsx",
+    "tsx",
+    "typescript",
+    "vite"
+  ],
+  "author": "me9rez",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "2.7.16"
+  }
 }

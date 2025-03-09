@@ -1,5 +1,5 @@
 <template>
-    <div style="display: flex;flex-direction: column;">
+    <div>
         <span>foo:{{ foo }}</span>
         <span>bar:{{ bar }}</span>
         <button @click="handleChange()">change</button>
@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent,h } from 'vue'
 import { useVModel, useVModels } from '@vueuse/core'
 
 export default defineComponent({
@@ -18,10 +18,6 @@ export default defineComponent({
     emits: {
         "update:foo": String,
         "update:bar": Number,
-    },
-    model: {
-        // prop: "foo",
-        // event: "update:foo"
     },
     setup(props, { emit }) {
         const { foo, bar } = useVModels(props, emit)

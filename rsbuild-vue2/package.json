@@ -8,13 +8,13 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@vueuse/core": "^10.11.0",
-    "bunchee-vue-jsx": "workspace:^",
+    "@vueuse/core": "11.3.0",
+    "lib": "workspace:*",
     "vue": "catalog:"
   },
   "devDependencies": {
-    "@rsbuild/core": "1.0.1-beta.1",
-    "@rsbuild/plugin-vue2": "1.0.1-beta.1",
-    "typescript": "^5.5.3"
+    "@rsbuild/core": "1.2.16",
+    "@rsbuild/plugin-vue2": "1.0.2",
+    "typescript": "^5.8.2"
   }
 }

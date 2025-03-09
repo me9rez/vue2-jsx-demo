@@ -2,15 +2,16 @@
   <div class="content">
     <h1>Rsbuild with Vue</h1>
     <p>Start building amazing things with Rsbuild.</p>
-    <!-- <TestH1></TestH1> -->
     <Layout></Layout>
+    <!-- <TestH1></TestH1> -->
     <!-- <Spinner></Spinner> -->
+    <div>测试</div>
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="tsx">
 import { defineComponent, h } from "vue";
-import { Layout } from "@components/index";
+import { Layout } from "lib";
 
 const TestH1 = defineComponent({
   render() {

@@ -5,9 +5,9 @@
     </div>
 </template>
 
-<script lang="tsx">
+<script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { Layout } from "../../bunchee-vue-jsx/src/index";
+import { Layout } from "lib";
 import Test from './components/Test.vue';
 
 export default defineComponent({
@@ -16,7 +16,6 @@ export default defineComponent({
         Test
     },
     setup() {
-
         const foo = ref('test')
         const bar = ref(0)
 
