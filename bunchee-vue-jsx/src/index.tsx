@@ -2,7 +2,8 @@ import { defineComponent, PropType } from "vue";
 import { customH as h, Fragment } from "./helper";
 
 export {
-  h, Fragment
+  h,
+  Fragment
 }
 
 export const layoutProps = {
@@ -21,11 +22,7 @@ export const layoutProps = {
 export const Layout = defineComponent({
   props: layoutProps,
   setup(props, { slots, attrs, emit }) {
-
-    console.log(props,slots,attrs,emit);
-
     const defaultSlot = slots?.default
-
     return () => {
       return (
         defaultSlot ?

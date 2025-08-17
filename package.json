@@ -5,15 +5,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev1": "pnpm -F lib build && pnpm -F vite-vue2 dev",
-    "dev2": "pnpm -F lib build && pnpm -F rsbuild-vue2 dev"
+    "build-lib": "pnpm -F lib build",
+    "dev1": "pnpm run build-lib && pnpm -F vite-vue2 dev",
+    "dev2": "pnpm run build-lib && pnpm -F rsbuild-vue2 dev"
   },
   "keywords": [
     "vue",
     "jsx",
     "tsx",
     "typescript",
-    "vite"
+    "vite",
+    "rsbuild"
   ],
   "author": "me9rez",
   "license": "MIT",

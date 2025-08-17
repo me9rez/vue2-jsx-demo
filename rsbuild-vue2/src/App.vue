@@ -12,7 +12,7 @@
 
 <script setup lang="tsx">
 import { defineComponent, } from "vue";
-import { Layout, h } from "lib";
+import { Layout, h, Fragment } from "lib";
 
 // const Test1 = defineComponent({
 //   render() {
@@ -33,9 +33,9 @@ const Test3 = defineComponent({
   setup() {
     return () => {
       return (
-        <div>
+        <>
           <h3>Test3 Component</h3>
-        </div>
+        </>
       )
     }
   }
