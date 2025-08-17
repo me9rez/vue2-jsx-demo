@@ -1,5 +1,5 @@
 vite-dev:
-    pnpm --filter lib build && pnpm --filter vite-vue2 dev
+    pnpm run dev1
 
 rsbuild-dev:
-    pnpm --filter lib build && pnpm --filter rsbuild-vue2 dev
+    pnpm run dev2
