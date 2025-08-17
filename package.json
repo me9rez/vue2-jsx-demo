@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": ""
+    "dev1": "pnpm -F lib build && pnpm -F vite-vue2 dev",
+    "dev2": "pnpm -F lib build && pnpm -F rsbuild-vue2 dev"
   },
   "keywords": [
     "vue",
@@ -17,6 +18,7 @@
   "author": "me9rez",
   "license": "MIT",
   "dependencies": {
-    "vue": "2.7.16"
+    "vue": "catalog:"
+
   }
 }

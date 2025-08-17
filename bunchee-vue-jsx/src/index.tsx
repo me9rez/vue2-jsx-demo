@@ -20,12 +20,21 @@ export const layoutProps = {
  */
 export const Layout = defineComponent({
   props: layoutProps,
-  render() {
-    return (
-      <div>
-        <h1>vue2 jsx/tsx组件测试</h1>
-        <span>span元素</span>
-      </div>
-    );
-  },
+  setup(props, { slots, attrs, emit }) {
+
+    console.log(props,slots,attrs,emit);
+
+    const defaultSlot = slots?.default
+
+    return () => {
+      return (
+        defaultSlot ?
+          defaultSlot() :
+          <div>
+            <h1>vue2 jsx/tsx组件测试</h1>
+            <span>span元素</span>
+          </div>
+      )
+    }
+  }
 });

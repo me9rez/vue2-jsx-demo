@@ -13,8 +13,8 @@
     "vue": "catalog:"
   },
   "devDependencies": {
-    "@rsbuild/core": "1.2.16",
-    "@rsbuild/plugin-vue2": "1.0.2",
-    "typescript": "^5.8.2"
+    "@rsbuild/core": "1.4.15",
+    "@rsbuild/plugin-vue2": "1.0.4",
+    "typescript": "^5.9.2"
   }
 }

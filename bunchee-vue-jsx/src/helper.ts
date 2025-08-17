@@ -1,9 +1,10 @@
 import { h } from "vue";
 
-export function customH<T, W, X>(tag: T, props: W, ...vnode: any[]) {
-  return h(tag, props, vnode);
+export function customH<T, W, X>(tag: T, props: W, ...vnodes: any[]) {
+  return h(tag, props, vnodes);
 }
 
-export function Fragment(...vnode: any[]) {
-  return h('div', {}, vnode)
+export function Fragment(...vnodes: any[]) {
+  console.log(vnodes);
+  return h('div', {}, vnodes)
 }

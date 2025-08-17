@@ -4,12 +4,13 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(
-
-  )],
+  plugins: [vue()],
   resolve: {
-    alias: {
-      "@components": fileURLToPath(new URL("../bunchee-vue-jsx/src", import.meta.url))
-    }
+    // alias: {
+    //   "@components": fileURLToPath(new URL("../bunchee-vue-jsx/src", import.meta.url))
+    // }
+  },
+  server: {
+    port: 8080
   }
 })
